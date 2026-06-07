@@ -13,7 +13,7 @@ export function createMetadata(override: Metadata): Metadata {
       description: override.description ?? undefined,
       url: 'https://router.atius.com.br',
       images: '/assets/logo.png',
-      siteName: 'New API',
+      siteName: 'Atius AI Router',
       type: 'website',
       ...override.openGraph,
     },

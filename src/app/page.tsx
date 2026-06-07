@@ -1,12 +1,15 @@
 import { i18n } from '@/lib/i18n';
 import { redirect } from 'next/navigation';
+import { headers } from 'next/headers';
 
 /**
  * Fallback redirect for `/`.
  *
- * Locale detection is handled by `middleware.ts` (Accept-Language + cookies).
- * Keeping this page server-only avoids shipping extra client JS.
+ * Uses the Host header from the request to build an external-facing redirect
+ * URL, so Apache-proxied requests don't redirect to localhost:3003.
  */
-export default function RootPage() {
-  redirect(`/${i18n.defaultLanguage}`);
+export default async function RootPage() {
+  const hdrs = await headers();
+  const host = hdrs.get('host') || 'router.atius.com.br';
+  redirect(`https://${host}/${i18n.defaultLanguage}`);
 }
