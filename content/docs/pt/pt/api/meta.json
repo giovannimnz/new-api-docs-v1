@@ -1,0 +1,7 @@
+{
+  "title": "Referência da API",
+  "description": "Endpoints principais e fluxo de autenticação do Atius AI Router",
+  "icon": "Code",
+  "root": true,
+  "pages": ["index"]
+}

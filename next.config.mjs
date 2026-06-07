@@ -6,10 +6,15 @@ const withMDX = createMDX();
 const config = {
   reactStrictMode: true,
   poweredByHeader: false,
+  // ATIUS: force trailing slashes + add Atius allowedOrigins
+  trailingSlash: true,
   experimental: {
     serverActions: {
       allowedOrigins: [
         'localhost:3000',
+        'router.atius.com.br',
+        'www.router.atius.com.br',  // ATIUS
+
         // newapi.pro domains
         'docs.newapi.pro',
         'newapi.pro',

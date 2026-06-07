@@ -1,0 +1,7 @@
+{
+  "title": "Ajuda e Suporte",
+  "description": "FAQ, comunidade e canais de feedback",
+  "icon": "Headset",
+  "root": true,
+  "pages": ["index"]
+}

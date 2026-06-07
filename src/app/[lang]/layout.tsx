@@ -35,6 +35,18 @@ const { provider } = defineI18nUI(i18n, {
       previousPage: '前のページ',
       tocNoHeadings: '見出しがありません',
     },
+    pt: {
+      displayName: 'Português (Brasil)',
+      search: 'Pesquisar na documentação',
+      searchNoResult: 'Nenhum resultado',
+      toc: 'Índice',
+      lastUpdate: 'Última atualização',
+      chooseTheme: 'Escolher tema',
+      chooseLanguage: 'Escolher idioma',
+      nextPage: 'Próxima página',
+      previousPage: 'Página anterior',
+      tocNoHeadings: 'Índice vazio',
+    },
   },
 });
 
@@ -43,22 +55,28 @@ const titleMap: Record<
   { default: string; template: string; description: string }
 > = {
   en: {
-    default: 'New API - The Foundation of Your AI Universe',
-    template: '%s | New API',
+    default: 'Atius AI Router - Production-Ready LLM Gateway',
+    template: '%s | Atius AI Router',
     description:
       'Connect all AI providers, manage your AI assets, and build the future on a unified infrastructure platform. Deploy in minutes, scale effortlessly.',
   },
   zh: {
-    default: 'New API - AI 基座',
-    template: '%s | New API',
+    default: 'Atius AI Router - 生产就绪的 LLM 网关',
+    template: '%s | Atius AI Router',
     description:
       '承载所有 AI 应用，管理你的数字资产，连接未来的统一基础设施平台。快速部署，轻松扩展。',
   },
   ja: {
-    default: 'New API - あなたの AI ユニバースの基盤',
-    template: '%s | New API',
+    default: 'Atius AI Router - 本番運用対応 LLM ゲートウェイ',
+    template: '%s | Atius AI Router',
     description:
       'すべての AI プロバイダーを接続し、AI アセットを管理し、統一されたインフラストラクチャプラットフォームで未来を構築。数分でデプロイ、簡単にスケール。',
+  },
+  pt: {
+    default: 'Atius AI Router - Gateway LLM pronto para produção',
+    template: '%s | Atius AI Router',
+    description:
+      'Agregue 40+ provedores de AI em uma única API compatível com OpenAI/Anthropic. Construído sobre QuantumNous/new-api, robusto para produção.',
   },
 };
 
@@ -90,9 +108,9 @@ export async function generateMetadata({
       'Intelligent API Management',
     ],
     authors: [
-      { name: 'New API Team', url: 'https://github.com/QuantumNous/new-api' },
+      { name: 'Atius AI Router Team', url: 'https://github.com/giovannimnz/router-ai-atius' },
     ],
-    creator: 'New API Team',
+    creator: 'Atius AI Router Team',
     alternates: {
       languages: {
         en: '/en',
@@ -105,7 +123,7 @@ export async function generateMetadata({
       locale: lang,
       title: titles.default,
       description: titles.description,
-      siteName: 'New API',
+      siteName: 'Atius AI Router',
     },
     twitter: {
       card: 'summary_large_image',

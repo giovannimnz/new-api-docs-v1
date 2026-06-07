@@ -1,0 +1,46 @@
+---
+title: Skills
+description: Plugins oficiais de Skills da New API para Claude Code, Codex e OpenClaw. Consulta modelos, gere tokens, verifica saldo e tira dúvidas sem sair do teu editor.
+---
+
+import { Card, Cards } from 'fumadocs-ui/components/card';
+import { User, Shield } from 'lucide-react';
+
+## Visão Geral
+
+**Skills** é um protocolo leve de extensão que permite que editores e agentes de IA — como Claude Code, Codex, OpenClaw, Cursor e Windsurf — interajam com a New API diretamente do ambiente de coding, sem depender de navegador ou painel admin.
+
+A Skill `newapi` já cobre consulta de modelos, gestão de tokens, verificação de saldo e perguntas sobre uso da New API.
+
+<Cards>
+  <Card
+    icon={<User />}
+    title="newapi"
+    description="Skill de utilizador para consultar modelos, gerir tokens, ver grupos, verificar saldo e pedir ajuda sobre uso da New API."
+    href="/pt/docs/skills/newapi"
+  />
+  <Card
+    icon={<Shield />}
+    title="newapi-admin (Em breve)"
+    description="Skill administrativa para gestão de canais, utilizadores, configuração do sistema e observabilidade."
+    href="/pt/docs/skills/newapi-admin"
+  />
+</Cards>
+
+## Editores compatíveis
+
+| Editor / Assistente | Tipo | Notas |
+|---------------------|------|-------|
+| **Claude Code** | Assistente de programação no terminal | CLI oficial da Anthropic |
+| **OpenClaw** | Plataforma self-hosted de agentes | Suporta fluxos de comando com `/newapi` |
+| **Cursor** | Editor nativo de IA | Baseado em VS Code |
+| **Windsurf** | Editor de código com IA | Mantido pela Codeium |
+| **Cline** | Extensão de IA para VS Code | Agente open-source |
+| **Codex CLI** | Assistente de programação no terminal | CLI oficial da OpenAI |
+
+> Qualquer ferramenta compatível com o protocolo de Skills pode usar estas integrações.
+
+## Saber mais
+
+- Repositório: [github.com/QuantumNous/skills](https://github.com/QuantumNous/skills)
+- Site da New API: [www.newapi.ai](https://www.newapi.ai)

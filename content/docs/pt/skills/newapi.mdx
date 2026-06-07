@@ -1,0 +1,87 @@
+---
+title: newapi
+description: Skill oficial de utilizador da New API para Claude Code, Codex e OpenClaw.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+<Callout type="info" title="O que é newapi-skills?">
+**newapi-skills** é o plugin oficial de Skills da New API para editores de IA.
+Permite consultar modelos, gerir tokens, verificar saldo e perguntar sobre deploy,
+configuração e formatos de API sem sair do teu fluxo de coding.
+
+- Repositório: [github.com/QuantumNous/skills](https://github.com/QuantumNous/skills)
+</Callout>
+
+## Por que usar
+
+- **Zero troca de contexto**: executa comandos no editor, sem abrir dashboard
+- **Ajuda embutida**: pergunta sobre grupos, tokens, deploy e formatos de chamada
+- **Segurança**: chaves ficam mascaradas; `copy-token` e `apply-token` evitam exposição em logs
+- **Compatibilidade ampla**: funciona com qualquer editor compatível com o protocolo
+
+## Comandos principais
+
+### Consulta
+
+| Comando | O que faz |
+|---------|------------|
+| `/newapi models` | Lista modelos disponíveis |
+| `/newapi groups` | Lista grupos do utilizador |
+| `/newapi balance` | Mostra saldo e uso atual |
+
+### Gestão de tokens
+
+| Comando | O que faz |
+|---------|------------|
+| `/newapi tokens` | Lista tokens mascarados |
+| `/newapi create-token <name>` | Cria novo token |
+| `/newapi switch-group <token_id> <group>` | Troca o grupo do token |
+| `/newapi copy-token <token_id>` | Copia a chave para o clipboard |
+| `/newapi apply-token <token_id> <file>` | Injeta a chave num ficheiro de config |
+
+### Ajuda
+
+| Comando | O que faz |
+|---------|------------|
+| `/newapi help <pergunta>` | Responde dúvidas sobre uso da New API |
+
+## Instalação
+
+<Steps>
+  <Step>
+    ### Adiciona a Skill
+
+    ```bash
+    npx skills add https://github.com/QuantumNous/skills --skill newapi
+    ```
+  </Step>
+  <Step>
+    ### Configura as variáveis de ambiente
+
+    ```bash
+    export NEWAPI_BASE_URL=https://<teu-domínio>
+    export NEWAPI_ACCESS_TOKEN=<teu-token>
+    export NEWAPI_USER_ID=1
+    ```
+  </Step>
+  <Step>
+    ### Começa a usar
+
+    Exemplos:
+
+    - `/newapi models`
+    - `/newapi balance`
+    - `/newapi create-token meu-app`
+    - `/newapi help como configuro grupos e tokens?`
+  </Step>
+</Steps>
+
+## Runtimes suportados
+
+| Runtime | Recomendação |
+|---------|---------------|
+| **Bun** | recomendado |
+| **Node.js >= 18** | suportado |
+| **Deno** | opcional |

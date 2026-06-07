@@ -1,0 +1,7 @@
+{
+  "title": "Instalação e Implantação",
+  "description": "Métodos principais de deploy do Atius AI Router",
+  "icon": "Boxes",
+  "root": true,
+  "pages": ["index", "deployment-methods"]
+}

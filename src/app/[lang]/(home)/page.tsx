@@ -33,11 +33,11 @@ const contentMap: Record<
   }
 > = {
   en: {
-    badge: 'The Foundation of Your AI Universe',
-    title: 'Connect all AI providers, manage your AI assets,',
+    badge: 'Atius AI Router — Production Ready',
+    title: 'Aggregate 40+ AI providers behind a single OpenAI/Anthropic-compatible API.',
     subtitle: 'build the',
     highlight: 'future',
-    getStarted: 'Getting Started',
+    getStarted: 'Read the docs',
     github: 'GitHub',
     atomgit: 'AtomGit',
     partnersTitle: 'Our Partners & Clients',
@@ -152,7 +152,7 @@ export default async function Page({
               {content.getStarted}
             </Link>
             <a
-              href="https://github.com/QuantumNous/new-api"
+              href="https://github.com/giovannimnz/router-ai-atius"
               target="_blank"
               rel="noreferrer noopener"
               className="bg-fd-secondary text-fd-secondary-foreground hover:bg-fd-accent inline-flex items-center justify-center gap-2 rounded-full border px-5 py-3 font-medium tracking-tight transition-colors max-sm:text-sm"
@@ -161,7 +161,7 @@ export default async function Page({
               {content.github}
             </a>
             <a
-              href="https://atomgit.com/QuantumNous/new-api"
+              href="https://github.com/giovannimnz/router-ai-atius"
               target="_blank"
               rel="noreferrer noopener"
               className="bg-fd-secondary text-fd-secondary-foreground hover:bg-fd-accent inline-flex items-center justify-center gap-2 rounded-full border px-5 py-3 font-medium tracking-tight transition-colors max-sm:text-sm"

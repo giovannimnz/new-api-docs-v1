@@ -1,0 +1,77 @@
+---
+title: Início Rápido
+description: Escolhe o caminho mais rápido para começar com o Atius AI Router
+---
+
+import {
+  Server,
+  Headphones,
+  Handshake,
+  Container,
+  Boxes,
+  Code2,
+  Bot,
+} from 'lucide-react';
+
+## Começa pelo caminho certo
+
+Escolhe o método de implantação que melhor se adapta ao teu cenário. A versão PT-BR cobre o fluxo principal e aponta para as seções equivalentes em inglês quando um tópico ainda não foi traduzido.
+
+<Cards>
+  <Card
+    icon={<Boxes />}
+    title="Docker Compose"
+    description="Deploy recomendado para produção, com serviços separados e configuração mais previsível."
+    href="/pt/docs/installation/deployment-methods/docker-compose-installation"
+  />
+  <Card
+    icon={<Container />}
+    title="Container Docker único"
+    description="Fluxo enxuto para testes, labs e ambientes menores."
+    href="/pt/docs/installation/deployment-methods/docker-installation"
+  />
+</Cards>
+
+## Explora a documentação
+
+<Cards>
+  <Card
+    icon={<Code2 />}
+    title="Referência da API"
+    description="Base URL, autenticação e exemplos compatíveis com OpenAI e Anthropic."
+    href="/pt/docs/api"
+  />
+  <Card
+    icon={<Bot />}
+    title="Skills"
+    description="Documentação das Skills oficiais da New API para Claude Code, Codex e OpenClaw."
+    href="/pt/docs/skills"
+  />
+  <Card
+    icon={<Headphones />}
+    title="Ajuda e suporte"
+    description="FAQ, comunidade e feedback."
+    href="/pt/docs/support"
+  />
+  <Card
+    icon={<Handshake />}
+    title="Colaboração comercial"
+    description="Contexto do projeto e canais de contato para parcerias."
+    href="/pt/docs/business"
+  />
+</Cards>
+
+## Por que Atius AI Router?
+
+O **Atius AI Router** é um fork orientado a produção do `QuantumNous/new-api`, com foco em estabilidade operacional, documentação organizada e compatibilidade prática com fluxos OpenAI / Anthropic.
+
+- API única para múltiplos providers
+- Compatibilidade com SDKs e ferramentas que já falam OpenAI
+- Documentação local em PT-BR para reduzir atrito operacional
+- Base open-source auditável
+
+<Callout type="info" title="Cobertura PT-BR atual">
+A home, a instalação principal, a referência da API, as Skills e as páginas de navegação
+principal já estão em PT-BR. Quando uma seção ainda não tiver tradução completa,
+aponta para a rota equivalente em `/en/docs/`.
+</Callout>

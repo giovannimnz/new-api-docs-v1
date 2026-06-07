@@ -1,0 +1,7 @@
+{
+  "title": "Colaboração Comercial",
+  "description": "Contexto do projeto e canal de contacto para parcerias",
+  "icon": "Handshake",
+  "root": true,
+  "pages": ["index"]
+}

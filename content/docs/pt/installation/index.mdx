@@ -1,0 +1,32 @@
+---
+title: Instalação e Implantação
+description: Escolhe o método de deploy principal para começar rápido
+---
+
+import { Container, Boxes } from 'lucide-react';
+
+## Opções recomendadas
+
+Hoje a trilha PT-BR cobre os dois fluxos mais usados. Para cenários mais específicos
+(1Panel, Baota, cluster, local-dev detalhado), consulta a versão equivalente em
+[/en/docs/installation](/en/docs/installation).
+
+<Cards>
+  <Card
+    icon={<Boxes />}
+    title="Docker Compose"
+    description="Melhor escolha para produção, com serviços bem separados e manutenção previsível."
+    href="/pt/docs/installation/deployment-methods/docker-compose-installation"
+  />
+  <Card
+    icon={<Container />}
+    title="Container Docker único"
+    description="Setup direto para ambiente menor, laboratório ou validação rápida."
+    href="/pt/docs/installation/deployment-methods/docker-installation"
+  />
+</Cards>
+
+<Callout type="tip" title="Se precisas de mais opções">
+Os métodos avançados continuam disponíveis em inglês. Usa `/en/docs/installation/`
+quando precisares de um passo a passo que ainda não foi portada para PT-BR.
+</Callout>

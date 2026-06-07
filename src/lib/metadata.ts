@@ -11,7 +11,7 @@ export function createMetadata(override: Metadata): Metadata {
     openGraph: {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
-      url: 'https://www.newapi.ai',
+      url: 'https://router.atius.com.br',
       images: '/assets/logo.png',
       siteName: 'New API',
       type: 'website',
@@ -30,5 +30,5 @@ export function createMetadata(override: Metadata): Metadata {
 export const baseUrl =
   process.env.NODE_ENV === 'development' ||
   !process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? new URL('http://localhost:3000')
+    ? new URL('https://router.atius.com.br')
     : new URL(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);

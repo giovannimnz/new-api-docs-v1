@@ -1,0 +1,7 @@
+{
+  "title": "Skills",
+  "description": "Skills oficiais da New API para Claude Code, Codex e OpenClaw",
+  "icon": "Puzzle",
+  "root": true,
+  "pages": ["index", "newapi", "newapi-admin"]
+}

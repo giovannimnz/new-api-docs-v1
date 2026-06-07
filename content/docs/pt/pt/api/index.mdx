@@ -1,0 +1,80 @@
+---
+title: Referência da API
+description: Base URL, autenticação e exemplos de chamadas compatíveis com OpenAI e Anthropic
+---
+
+## Visão Geral
+
+O **Atius AI Router** expõe uma API REST compatível com formatos OpenAI e Anthropic.
+Na prática, a maioria dos SDKs só precisa trocar a `base_url` e manter o token.
+
+<Callout type="info" title="Especificação OpenAPI">
+A spec completa fica em [/docs.json](/docs.json). Usa essa URL para gerar clientes,
+importar no Postman/Insomnia ou validar contratos.
+</Callout>
+
+## Base URL
+
+```text
+https://router.atius.com.br/v1
+```
+
+Para ambiente local:
+
+```text
+http://localhost:3030/v1
+```
+
+## Autenticação
+
+Todas as chamadas precisam de token no header:
+
+```bash
+Authorization: Bearer <teu-token>
+```
+
+## Exemplos rápidos
+
+### Chat Completions
+
+```bash
+curl -X POST https://router.atius.com.br/v1/chat/completions   -H "Authorization: Bearer <teu-token>"   -H "Content-Type: application/json"   -d '{
+    "model": "MiniMax-M3",
+    "messages": [
+      {"role": "user", "content": "Olá"}
+    ]
+  }'
+```
+
+### Listar modelos
+
+```bash
+curl https://router.atius.com.br/v1/models   -H "Authorization: Bearer <teu-token>"
+```
+
+### Anthropic Messages
+
+```bash
+curl -X POST https://router.atius.com.br/v1/messages   -H "x-api-key: <teu-token>"   -H "anthropic-version: 2023-06-01"   -H "Content-Type: application/json"   -d '{
+    "model": "MiniMax-M3",
+    "max_tokens": 256,
+    "messages": [{"role": "user", "content": "Olá"}]
+  }'
+```
+
+## Códigos de erro mais comuns
+
+| Código | Significado |
+|--------|-------------|
+| 400 | Payload inválido |
+| 401 | Token ausente ou inválido |
+| 403 | Token sem permissão |
+| 404 | Modelo ou rota inexistente |
+| 429 | Rate limit ou quota atingida |
+| 500 | Erro interno |
+| 502 | Falha no provider upstream |
+
+## Próximo passo
+
+Se precisares de cobertura detalhada endpoint por endpoint, mantém `/docs.json` como fonte
+principal e consulta `/en/docs/api/` para descrições adicionais ainda não traduzidas.

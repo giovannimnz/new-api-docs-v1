@@ -1,0 +1,42 @@
+---
+title: Guia de Funcionalidades
+description: Navegação rápida pelas áreas mais importantes do Atius AI Router
+---
+
+import { BookOpen, Boxes, Code2, Headphones, Puzzle } from 'lucide-react';
+
+## Visão Geral
+
+Usa esta seção como mapa rápido da documentação. Em vez de te jogar em páginas profundas ainda sem tradução, ela centraliza as entradas principais já adaptadas para PT-BR.
+
+<Cards>
+  <Card
+    icon={<Boxes />}
+    title="Instalação"
+    description="Deploy com Docker Compose e container único."
+    href="/pt/docs/installation"
+  />
+  <Card
+    icon={<Code2 />}
+    title="Referência da API"
+    description="Base URL, autenticação e exemplos de chamadas."
+    href="/pt/docs/api"
+  />
+  <Card
+    icon={<Puzzle />}
+    title="Skills"
+    description="Como usar as Skills oficiais com Claude Code, Codex e OpenClaw."
+    href="/pt/docs/skills"
+  />
+  <Card
+    icon={<Headphones />}
+    title="Ajuda e suporte"
+    description="FAQ, comunidade e feedback."
+    href="/pt/docs/support"
+  />
+</Cards>
+
+<Callout type="info" title="Cobertura incremental">
+As rotas PT-BR estão sendo consolidadas primeiro nas páginas de maior uso.
+Para conteúdo ainda não traduzido, usa a árvore equivalente em `/en/docs/`.
+</Callout>

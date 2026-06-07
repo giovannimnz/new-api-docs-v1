@@ -1,0 +1,7 @@
+{
+  "title": "Aplicações de IA",
+  "description": "Resumo das integrações já validadas com o Atius AI Router",
+  "icon": "Sparkles",
+  "root": true,
+  "pages": ["index"]
+}

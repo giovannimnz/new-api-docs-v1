@@ -40,7 +40,7 @@ function Header() {
         <p className="text-fd-muted-foreground text-xs">
           Powered by{' '}
           <a
-            href="https://www.newapi.ai"
+            href="https://router.atius.com.br"
             target="_blank"
             rel="noreferrer noopener"
           >

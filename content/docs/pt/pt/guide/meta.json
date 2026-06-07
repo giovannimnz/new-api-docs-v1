@@ -1,0 +1,7 @@
+{
+  "title": "Guia de Funcionalidades",
+  "description": "Visão geral das áreas principais da documentação",
+  "icon": "BookOpen",
+  "root": true,
+  "pages": ["index"]
+}

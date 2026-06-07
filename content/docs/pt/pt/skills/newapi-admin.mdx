@@ -1,0 +1,39 @@
+---
+title: newapi-admin (Em breve)
+description: Skill administrativa da New API para operações de canais, utilizadores e sistema.
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+<Callout type="warn" title="Em desenvolvimento">
+A Skill **newapi-admin** ainda não foi lançada. Esta página resume a direção do produto e o escopo esperado.
+</Callout>
+
+## Escopo previsto
+
+A ideia é permitir que administradores executem tarefas operacionais direto do editor,
+sem depender do painel web para cada ajuste do dia a dia.
+
+### Áreas cobertas
+
+| Área | Exemplos previstos |
+|------|--------------------|
+| Canais | listar, testar, ativar/desativar, ajustar prioridade |
+| Utilizadores | consultar saldo, alterar grupo, bloquear/desbloquear |
+| Sistema | ler e alterar configurações, sincronizar ratios |
+| Observabilidade | ver logs, estatísticas e saúde do ambiente |
+| Tokens e redemptions | visão global, criação em lote, auditoria |
+
+## Diferença para a Skill `newapi`
+
+| | `newapi` | `newapi-admin` |
+|---|---------|----------------|
+| Público | utilizadores / developers | administradores |
+| Escopo | modelos, tokens pessoais, saldo, ajuda | canais, utilizadores, config e logs |
+| Permissão | token de utilizador | token administrativo |
+| Estado | disponível | em desenvolvimento |
+
+## Atualizações
+
+- Repositório: [github.com/QuantumNous/skills](https://github.com/QuantumNous/skills)
+- Skill disponível hoje: [newapi](/pt/docs/skills/newapi)
